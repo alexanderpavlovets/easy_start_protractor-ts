@@ -1,5 +1,8 @@
+process.env.TS_NODE_FILES = true
+require('ts-node').register()
+
 module.exports.config = {
-    specs: ['specs/*.js'],
+    specs: ['specs/*.ts'],
     directConnect: true,
     capabilities: {
         browserName: 'chrome',
@@ -8,16 +11,16 @@ module.exports.config = {
     baseUrl: 'https://angularjs.org/',
     onPrepare: function () {
         beforeAll(function () {
-            
+
         })
         beforeEach(() => {
-             
+
         })
         afterEach(()=>{
 
         })
         afterAll(() => {
-             
+
         })
     }
 }
