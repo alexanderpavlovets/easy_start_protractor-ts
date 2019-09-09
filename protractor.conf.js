@@ -7,7 +7,8 @@ module.exports.config = {
     directConnect: true,
     capabilities: {
         browserName: 'chrome',
-        maxInstances: 1
+        maxInstances: 1,
+        enableVNC: true
         },
     baseUrl: 'https://angularjs.org/',
     onPrepare: function () {
