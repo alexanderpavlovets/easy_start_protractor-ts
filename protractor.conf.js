@@ -3,8 +3,8 @@ require('ts-node').register()
 
 module.exports.config = {
     specs: ['specs/*.ts'],
-    // seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
-    directConnect: true,
+    seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
+    // directConnect: true,
     capabilities: {
         browserName: 'chrome',
         maxInstances: 1,
