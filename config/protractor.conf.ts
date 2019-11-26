@@ -12,12 +12,11 @@ const config: Config = {
 
   baseUrl: 'https://angularjs.org/',
 
-  specs: ['specs/*.ts'],
+  specs: ['specs/*.spec.ts'],
 
   framework: 'mocha',
   mochaOpts: {
-    // reporter: 'spec',
-    reporter: 'mocha-allure2-reporter',
+    reporter: process.env.SPEC_REPORTER ? 'spec' : 'mocha-allure2-reporter',
     timeout: 30 * 1000
   },
 

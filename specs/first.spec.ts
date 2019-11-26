@@ -1,4 +1,4 @@
-import { browser, $, $$, element, by, ExpectedConditions as ES } from 'protractor'
+import {browser, $, $$, element, by, ExpectedConditions as ES} from 'protractor'
 import {expect} from 'chai'
 
 describe('First suite', () => {
